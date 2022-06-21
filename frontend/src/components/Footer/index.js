@@ -1,70 +1,88 @@
 import React from 'react';
 import {
-  FaFacebook,
-  FaInstagram,
-  FaYoutube,
-  FaTwitter,
-  FaLinkedin
+  FaFacebookSquare
 } from 'react-icons/fa';
-import { animateScroll as scroll } from 'react-scroll';
 import {
   FooterContainer,
   FooterWrap,
-  FooterLinksContainer,
-  FooterLinksWrapper,
-  FooterLinkItems,
-  FooterLinkTitle,
-  FooterLink,
-  SocialMedia,
-  SocialMediaWrap,
-
+  FooterLeft,
+  FooterLeftIn,
+  FooterRightIn,
+  FooterRight,
+  FooterTop,
+  FooterBottom,
+  FooterBottom2,
+  FooterTitle,
+  FooterPara,
+  FooterPara2,
+  FooterFacebookLink,
 } from './FooterElements';
 
 const Footer = () => {
-  const toggleHome = () => {
-    scroll.scrollToTop();
-  };
+
   return (
     <FooterContainer>
       <FooterWrap>
-        <FooterLinksContainer>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to='/'>Testimonials</FooterLink>
-              <FooterLink to='/'>Careers</FooterLink>
-              <FooterLink to='/'>Investors</FooterLink>
-              <FooterLink to='/'>Terms of Service</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>Contact Us</FooterLinkTitle>
-              <FooterLink to='/'>Contact</FooterLink>
-              <FooterLink to='/'>Support</FooterLink>
-              <FooterLink to='/'>Destinations</FooterLink>
-              <FooterLink to='/'>Sponsorships</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>Videos</FooterLinkTitle>
-              <FooterLink to='/'>Submit Video</FooterLink>
-              <FooterLink to='/'>Ambassadors</FooterLink>
-              <FooterLink to='/'>Agency</FooterLink>
-              <FooterLink to='/'>Influencer</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>Social Media</FooterLinkTitle>
-              <FooterLink to='/'>Instagram</FooterLink>
-              <FooterLink to='/'>Facebook</FooterLink>
-              <FooterLink to='/'>Youtube</FooterLink>
-              <FooterLink to='/'>Twitter</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-        </FooterLinksContainer>
-        <SocialMedia>
-          <SocialMediaWrap>
-          </SocialMediaWrap>
-        </SocialMedia>
+        <FooterLeft>
+          <FooterTop>
+              <FooterTitle>
+                HOURS
+              </FooterTitle>
+          </FooterTop>
+          <FooterBottom>
+              <FooterPara>
+                Mon-Fri 9am-9pm
+              </FooterPara>
+              <FooterPara>
+                Sat-Sun 12am-9pm
+              </FooterPara>
+          </FooterBottom>
+        </FooterLeft>
+        <FooterLeftIn>
+          <FooterTop>
+              <FooterTitle>
+                ADDRESS
+              </FooterTitle>
+          </FooterTop>
+          <FooterBottom>
+              <FooterPara>
+                15400 S Robert Trail
+              </FooterPara>
+              <FooterPara>
+                Rosemount Minnesota 55068
+              </FooterPara>
+          </FooterBottom>
+        </FooterLeftIn>
+        <FooterRightIn>
+          <FooterTop>
+              <FooterTitle>
+                CONTACT US
+              </FooterTitle>
+          </FooterTop>
+          <FooterBottom>
+              <FooterPara>
+                info@southmetrochildcare.org
+              </FooterPara>
+              <FooterPara>
+                +1 (612) 481 8447
+              </FooterPara>
+          </FooterBottom>
+        </FooterRightIn>
+        <FooterRight>
+          <FooterTop>
+              <FooterTitle>
+                FOLLOW US
+              </FooterTitle>
+          </FooterTop>
+          <FooterBottom2>
+            <FooterFacebookLink href='https://www.facebook.com/SouthMetroChildcareCenter/'>
+            <FaFacebookSquare margin-right='10px;'/>
+            <FooterPara2>
+              facebook
+            </FooterPara2>
+            </FooterFacebookLink>
+          </FooterBottom2>
+        </FooterRight>
       </FooterWrap>
     </FooterContainer>
   );
