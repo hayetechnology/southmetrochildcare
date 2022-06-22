@@ -1,40 +1,24 @@
 import React from 'react';
 import {
   HomeContainer,
-  HomeBg,
-  HomeVideoBg,
   HomeWrapper,
-  Home,
-  HomeLeft,
-  HomePhotoCard,
-  HomePhotoIcon,
-  HomePhotoTitle,
-  HomeResumeCard,
-  HomeResumeCardIn,
-  HomeDownloadIcon,
-  HomeButtonD,
-  HomeRight,
-  HomeEduCard,
-  HomeEduCardIn,
-  HomeEduIcon,
-  HomeEduAwardTitle,
-  HomeEduAwardP,
-  HomeAwardCard,
-  HomeAwardCardIn,
-  HomeAwardIcon,
-  NavLinks  
+  HomeImage,
+  HombeBg,
+  HomeTitle,
 } from './HomeElements';
+import ChildrenImage from '../../images/HomeChildren.png';
 
   function HomeSection() {
-   
-    
     return (
     <HomeContainer id='home'>
-      <HomeBg>
-      </HomeBg>
+    <HomeTitle>
+          SOUTH METRO CHILDCARE
+    </HomeTitle>
+      <HombeBg>
+        <HomeImage src={ChildrenImage}>
+        </HomeImage>
+      </HombeBg>
       <HomeWrapper>
-        <Home>
-        </Home>
       </HomeWrapper>
     </HomeContainer>
   );
