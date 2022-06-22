@@ -5,6 +5,8 @@ export const FooterContainer = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
+  width: 100%;
   background-color: ${lightblue};
   //light-blue
 `;
